@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "general": {
+    "start_with_windows": false,
+    "start_minimized": false,
+    "auto_connect_on_start": false,
+    "minimize_to_tray": false,
+    "auto_fallback": true,
+    "auto_detect_discord": true,
+    "launch_discord_on_start": false,
+    "on_stop_discord_action": "reset_connections",
+    "log_level": "INFO",
+    "auto_health_check": true,
+    "diagnostics_mode": false
+  },
+  "process_match": {
+    "install_roots": [
+      "%LOCALAPPDATA%\\Discord",
+      "%LOCALAPPDATA%\\DiscordPTB",
+      "%LOCALAPPDATA%\\DiscordCanary"
+    ],
+    "required_signer": "Discord Inc.",
+    "verify_signature": true
+  },
+  "engine": {
+    "mode": "active",
+    "pending_queue_timeout_ms": 75,
+    "pending_queue_max_packets": 256,
+    "flow_idle_timeout_s": 120,
+    "ipv6": true
+  },
+  "tcp_strategy": {
+    "enabled": true,
+    "target_ports": [
+      443,
+      2053,
+      2083,
+      2087,
+      2096,
+      8443
+    ],
+    "split_mode": "first_byte",
+    "reverse_order": false
+  },
+  "udp_strategy": {
+    "mode": "observe"
+  },
+  "quic_strategy": {
+    "mode": "drop_discord_quic_443"
+  }
+}

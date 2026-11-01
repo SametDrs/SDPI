@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+logs/*.log
+!logs/.gitkeep
+
+# C++ Build & CMake Intermediates
+core/build/
+*.obj
+*.ilk
+*.pdb
+*.tlog
+*.idb
+*.pch
+*.lastbuildstate
+*.unsuccessfulbuild
+*.vcxproj.user
+*.bak
+*.old
+
+# Environments & Packaging
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & Editor files
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Windows system
+Thumbs.db
+ehthumbs.db
+Desktop.ini
