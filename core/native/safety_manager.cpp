@@ -1,4 +1,4 @@
-#ifndef WIN32_LEAN_AND_MEAN
+﻿#ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
 #ifndef NOMINMAX
@@ -7,7 +7,7 @@
 
 #include <windows.h>
 
-#include "discorddpi/safety_manager.hpp"
+#include "sdpi/safety_manager.hpp"
 
 #include <mutex>
 

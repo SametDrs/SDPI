@@ -1,7 +1,7 @@
-#pragma once
+﻿#pragma once
 
-#include "discorddpi/process_tracker.hpp"
-#include "discorddpi/types.hpp"
+#include "sdpi/process_tracker.hpp"
+#include "sdpi/types.hpp"
 
 #include <atomic>
 #include <chrono>

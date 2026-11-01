@@ -1,6 +1,6 @@
-#pragma once
+﻿#pragma once
 
-#include "discorddpi/types.hpp"
+#include "sdpi/types.hpp"
 
 #include <cstddef>
 #include <cstdint>

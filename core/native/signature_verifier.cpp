@@ -1,4 +1,4 @@
-#ifndef WIN32_LEAN_AND_MEAN
+﻿#ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
 #ifndef NOMINMAX
@@ -10,7 +10,7 @@
 #include <wintrust.h>
 #include <softpub.h>
 
-#include "discorddpi/signature_verifier.hpp"
+#include "sdpi/signature_verifier.hpp"
 
 #include <algorithm>
 #include <cwctype>

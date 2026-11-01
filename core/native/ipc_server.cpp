@@ -1,4 +1,4 @@
-#ifndef WIN32_LEAN_AND_MEAN
+﻿#ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
 #ifndef NOMINMAX
@@ -8,7 +8,7 @@
 #include <windows.h>
 #include <sddl.h>
 
-#include "discorddpi/ipc_server.hpp"
+#include "sdpi/ipc_server.hpp"
 
 #include <algorithm>
 #include <cctype>

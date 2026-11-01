@@ -10,6 +10,17 @@
 
 ---
 
+## 🎯 Neden SDPI? (Geliştirilme Amacı)
+
+Bu projenin geliştirilmesindeki temel çıkış noktası, klasik yöntemlerin yetersiz kalması ve günlük kullanımı olumsuz etkilemesidir:
+
+* **DNS Yetersizliği:** Windows ağ ayarlarından `1.1.1.1` (Cloudflare) veya Google DNS tanımlansa dahi ISS düzeyindeki derin paket inceleme (DPI) ve SNI blokajları aşılamamaktadır.
+* **Antivirüs & Genel Araç Çakışmaları:** GoodbyeDPI gibi sistem genelindeki tüm ağ trafiğini yönlendiren araçlar, **Kaspersky** gibi gelişmiş antivirüs/güvenlik yazılımlarıyla çakışabilmekte ya da oyun ve bankacılık trafiğinde kararsızlıklara yol açabilmektedir.
+
+**SDPI**, tüm internet bağlantısını riske atmak yerine **yalnızca Discord istemcisine ait ağ paketlerini (`PID` bazlı)** izole eder. Böylece hem Kaspersky gibi güvenlik yazılımlarıyla sorunsuz çalışır hem de sisteminizin diğer hiçbir trafiğine dokunmadan Discord'u stabil hale getirir.
+
+---
+
 ## 🚀 Öne Çıkan Özellikler
 
 - **Süreç Bazlı İzolasyon (Process-Bound):** Trafik filtreleme IP veya alan adına göre değil, `%LOCALAPPDATA%\Discord*` yol sınırları ve `"Discord Inc."` Authenticode dijital imzasıyla doğrulanmış Discord süreçlerine (`PID`) göre yapılır.

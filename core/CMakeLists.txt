@@ -16,7 +16,7 @@ if(NOT EXISTS "${WINDIVERT_LIB_DIR}/WinDivert.lib")
     message(FATAL_ERROR "WinDivert.lib bulunamadi: ${WINDIVERT_LIB_DIR}/WinDivert.lib")
 endif()
 
-add_library(discorddpi_core STATIC
+add_library(sdpi_core STATIC
     native/signature_verifier.cpp
     native/process_tracker.cpp
     native/packet_filter.cpp
@@ -29,17 +29,17 @@ add_library(discorddpi_core STATIC
     native/safety_manager.cpp
 )
 
-target_include_directories(discorddpi_core
+target_include_directories(sdpi_core
     PUBLIC
         "${CMAKE_CURRENT_SOURCE_DIR}/include"
         "${WINDIVERT_INCLUDE_DIR}"
 )
 
 if(MSVC)
-    target_compile_options(discorddpi_core PUBLIC /W4 /EHsc /utf-8 /permissive-)
+    target_compile_options(sdpi_core PUBLIC /W4 /EHsc /utf-8 /permissive-)
 endif()
 
-target_link_libraries(discorddpi_core
+target_link_libraries(sdpi_core
     PUBLIC
         "${WINDIVERT_LIB_DIR}/WinDivert.lib"
         wintrust
@@ -53,7 +53,7 @@ add_executable(sdpi-engine
     native/main.cpp
     native/sdpi.rc
 )
-target_link_libraries(sdpi-engine PRIVATE discorddpi_core)
+target_link_libraries(sdpi-engine PRIVATE sdpi_core)
 
 add_custom_command(TARGET sdpi-engine POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_CURRENT_SOURCE_DIR}/../engine"

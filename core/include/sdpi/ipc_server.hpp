@@ -1,7 +1,7 @@
-#pragma once
+﻿#pragma once
 
-#include "discorddpi/dpi_engine.hpp"
-#include "discorddpi/types.hpp"
+#include "sdpi/dpi_engine.hpp"
+#include "sdpi/types.hpp"
 
 #include <atomic>
 #include <cstdint>

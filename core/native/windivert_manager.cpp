@@ -1,4 +1,4 @@
-#ifndef WIN32_LEAN_AND_MEAN
+﻿#ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
 #ifndef NOMINMAX
@@ -11,8 +11,8 @@
 #include <iphlpapi.h>
 #include "windivert.h"
 
-#include "discorddpi/packet_filter.hpp"
-#include "discorddpi/windivert_manager.hpp"
+#include "sdpi/packet_filter.hpp"
+#include "sdpi/windivert_manager.hpp"
 
 #include <cstring>
 #include <unordered_map>

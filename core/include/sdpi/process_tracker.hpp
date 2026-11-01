@@ -1,7 +1,7 @@
-#pragma once
+﻿#pragma once
 
-#include "discorddpi/signature_verifier.hpp"
-#include "discorddpi/types.hpp"
+#include "sdpi/signature_verifier.hpp"
+#include "sdpi/types.hpp"
 
 #include <cstdint>
 #include <optional>

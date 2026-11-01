@@ -1,4 +1,4 @@
-#ifndef WIN32_LEAN_AND_MEAN
+﻿#ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
 #ifndef NOMINMAX
@@ -8,7 +8,7 @@
 #include <windows.h>
 #include "windivert.h"
 
-#include "discorddpi/socket_monitor.hpp"
+#include "sdpi/socket_monitor.hpp"
 
 namespace discorddpi {
 

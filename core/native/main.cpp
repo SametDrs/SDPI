@@ -1,4 +1,4 @@
-#ifndef WIN32_LEAN_AND_MEAN
+﻿#ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
 #ifndef NOMINMAX
@@ -7,11 +7,11 @@
 
 #include <windows.h>
 
-#include "discorddpi/flow_tracker.hpp"
-#include "discorddpi/ipc_server.hpp"
-#include "discorddpi/process_tracker.hpp"
-#include "discorddpi/safety_manager.hpp"
-#include "discorddpi/windivert_manager.hpp"
+#include "sdpi/flow_tracker.hpp"
+#include "sdpi/ipc_server.hpp"
+#include "sdpi/process_tracker.hpp"
+#include "sdpi/safety_manager.hpp"
+#include "sdpi/windivert_manager.hpp"
 
 #include <atomic>
 #include <charconv>

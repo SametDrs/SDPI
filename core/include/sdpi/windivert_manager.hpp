@@ -1,10 +1,10 @@
-#pragma once
+﻿#pragma once
 
-#include "discorddpi/dpi_engine.hpp"
-#include "discorddpi/flow_tracker.hpp"
-#include "discorddpi/process_tracker.hpp"
-#include "discorddpi/socket_monitor.hpp"
-#include "discorddpi/types.hpp"
+#include "sdpi/dpi_engine.hpp"
+#include "sdpi/flow_tracker.hpp"
+#include "sdpi/process_tracker.hpp"
+#include "sdpi/socket_monitor.hpp"
+#include "sdpi/types.hpp"
 
 #include <atomic>
 #include <cstdint>

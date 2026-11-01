@@ -1,4 +1,4 @@
-#ifndef WIN32_LEAN_AND_MEAN
+﻿#ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
 #ifndef NOMINMAX
@@ -11,7 +11,7 @@
 #include <iphlpapi.h>
 #include "windivert.h"
 
-#include "discorddpi/flow_tracker.hpp"
+#include "sdpi/flow_tracker.hpp"
 
 #include <algorithm>
 

@@ -1,7 +1,7 @@
-#pragma once
+﻿#pragma once
 
-#include "discorddpi/tls_parser.hpp"
-#include "discorddpi/types.hpp"
+#include "sdpi/tls_parser.hpp"
+#include "sdpi/types.hpp"
 
 #include <cstdint>
 #include <shared_mutex>
