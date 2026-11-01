@@ -3,12 +3,12 @@
   "general": {
     "start_with_windows": false,
     "start_minimized": false,
-    "auto_connect_on_start": false,
+    "auto_connect_on_start": true,
     "minimize_to_tray": false,
     "auto_fallback": true,
     "auto_detect_discord": true,
-    "launch_discord_on_start": false,
-    "on_stop_discord_action": "reset_connections",
+    "launch_discord_on_start": true,
+    "on_stop_discord_action": "close_discord",
     "log_level": "INFO",
     "auto_health_check": true,
     "diagnostics_mode": false
@@ -39,8 +39,8 @@
       2096,
       8443
     ],
-    "split_mode": "first_byte",
-    "reverse_order": false
+    "split_mode": "record_and_sni",
+    "reverse_order": true
   },
   "udp_strategy": {
     "mode": "observe"
