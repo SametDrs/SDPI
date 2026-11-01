@@ -57,6 +57,17 @@ python -m app.main
 
 ---
 
+## 💡 Teşekkür & Referanslar (Acknowledgments)
+
+Bu proje, açık kaynak topluluğunun değerli araştırmaları ve araçları sayesinde hayata geçirilmiştir:
+
+* **[WinDivert](https://reqrypt.org/windivert.html)** (by Basil) — Windows çekirdek seviyesi paket yakalama ve yönlendirme sürücüsü.
+* **[GoodbyeDPI](https://github.com/ValdikSS/GoodbyeDPI)** (by ValdikSS) — Pasif DPI engelleme analizi ve TCP/TLS paket bölümleme teknikleri.
+* **[Zapret](https://github.com/bol-van/zapret)** (by bol-van) — Gelişmiş multi-platform DPI atlatma teknikleri ve stratejileri.
+* **[PySide6 / Qt](https://doc.qt.io/qtforpython-6/)** — Modern ve kararlı masaüstü kullanıcı arayüzü framework'ü.
+
+---
+
 ## 📄 Lisans
 
 Bu proje [Apache License 2.0](LICENSE) kapsamında lisanslanmıştır.  
